@@ -33,9 +33,10 @@ def make_forecast(data):
 # Interface utilisateur
 st.title("Application de suivi de performance et d'analyse prédictive")
 
-# Formulaire de Saisie des Données
-st.header("Enter the data")
-st.write("Entrez les informations de production et de maintenance.")
+st.markdown("""
+### Cette application sert à suivre la performance de production et à effectuer des analyses prédictives.
+Entrez les informations ci-dessous pour calculer les KPI et visualiser les résultats.
+""")
 
 # Champs de saisie
 temps_production = st.number_input("Temps de Production (en heures)", min_value=0.0)
